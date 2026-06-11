@@ -27,18 +27,30 @@ QRU is a quantum recurrent neural network architecture that implements informati
 quantum-recurrent-unit/
 ├── README.md
 ├── requirements.txt
-├── core/                          # QRU circuit definitions
-│   └── qru_circuit.ipynb          # Core QRU architecture (C-SWAP gating, VQC layers)
 ├── experiments/
-│   ├── 01_oscillation/            # Damped oscillation prediction (Section 3.2)
-│   ├── 02_wdbc/                   # WDBC breast cancer classification (Section 3.3)
-│   ├── 03_mnist/                  # MNIST digit recognition "3" vs "5" (Section 3.4)
-│   └── 04_hardware_validation/    # IBM Quantum hardware experiments (Section 3.5)
-│       ├── ni_training/           # Noise injection (NI) training with OTC calibration
-│       ├── fake_backend/          # Fake backend evaluation
-│       └── qesem/                 # QESEM error mitigation on ibm_marrakesh
+│   ├── 01_oscillation/                          # Section 3.2
+│   ├── 02_wdbc/                                 # Section 3.3
+│   ├── 03_mnist/                                # Section 3.4
+│   ├── 04_hardware_validation/                  # Section 3.5
+│   │   ├── ni_training/
+│   │   │   ├── wdbc/                            # NI training (Tables 8-9)
+│   │   │   ├── mnist/                           # NI training (Tables 8-9)
+│   │   │   └── mnist_sigma0.05_qesem_params/    # NI training for QESEM params
+│   │   ├── error_mitigation_comparison/         # Figure 7 / Table 10
+│   │   └── qesem_sequential/                    # Figure 8, 9
+│   └── supplementary/
+│       ├── S4_1_dual_basis/                     # Z+X vs Z-only comparison
+│       │   ├── v1_single_basis/                 # actual notebook (Z-only)
+│       │   └── v2_dual_basis/
+│       │       └── README.md                    # points to S4_2 standard_qru (Z+X)
+│       ├── S4_2_c-swap_ablation/                # C-SWAP ablation (Table S2 / Fig S9)
+│       │   └── v2_dual_basis/
+│       │       ├── standard_qru/                # (a) full QRU with C-SWAP
+│       │       ├── without_c-swap/              # (b) C-SWAP + ancilla removed
+│       │       └── cnot_replacement/            # (c) C-SWAP -> CNOT
+│       └── S4_3_feature_ordering/               # WDBC feature permutation (Table S3)
 └── data/
-    └── README.md                  # Dataset sources and download instructions
+    └── README.md                                # dataset sources & download instructions
 ```
 
 ---
