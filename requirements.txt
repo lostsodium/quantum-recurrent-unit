@@ -1,0 +1,13 @@
+# Core simulation environment (Python 3.12.3)
+# Used for experiments 01-03 and supplementary ablation studies (S4.1-S4.3)
+pennylane==0.44.1
+jax==0.5.3
+jaxlib==0.5.3
+numpy==2.0.2
+scipy==1.15.1
+matplotlib==3.10.0
+
+# Hardware validation environment (Section 3.5)
+# Required only for experiments/04_hardware_validation/
+qiskit==2.3.0
+qiskit-ibm-runtime==0.45.1
