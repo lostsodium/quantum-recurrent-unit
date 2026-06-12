@@ -87,20 +87,27 @@ quantum-recurrent-unit/
 
 ## Requirements
 
-All simulations use [PennyLane](https://pennylane.ai/) with [JAX](https://github.com/google/jax) backend. Hardware experiments additionally require [Qiskit](https://qiskit.org/) and `qiskit-ibm-runtime`.
+This repository uses two separate environments:
 
-```
-pennylane
-jax
-jaxlib
-numpy
-scipy
-matplotlib
-qiskit>=2.0          # hardware validation only
-qiskit-ibm-runtime   # hardware validation only
-```
+- **Simulation environment** (PennyLane + JAX): required for `experiments/01-03` and `experiments/supplementary/`
+- **Hardware environment** (Qiskit + qiskit-ibm-runtime): required only for `experiments/04_hardware_validation/`
 
-See `requirements.txt` for specific versions used in the paper.
+See `requirements.txt` for the specific package versions used to verify these notebooks.
+
+---
+
+## Reproducibility Notes
+
+The notebooks in this repository reflect the actual research workflow and may contain exploratory code, alternative configurations that were not used in the final results, and intermediate outputs. They are provided primarily for transparency and as a reference for the methods and parameters used to obtain the results reported in the paper.
+
+A few practical notes:
+
+- **File paths**: Some notebooks use hardcoded local paths (e.g. for loading parameter files or saving checkpoints). These may need to be adjusted to match your local directory structure.
+- **Package versions**: `requirements.txt` lists the package versions used to verify these notebooks at the time of writing. Earlier results (particularly for the oscillation and WDBC experiments) were originally obtained over an extended development period and may have used slightly different versions; minor numerical differences may occur with different package versions.
+- **Stochastic results**: Experiments involving random initialization (e.g. the oscillation prediction task, Section 3.2) report statistics over multiple independent runs. Individual runs may differ from the reported mean/std due to random seeding.
+- **Hardware experiments**: Notebooks in `experiments/04_hardware_validation/` require an IBM Quantum account and access to the Qedma QESEM function via the Qiskit Functions Catalog. Account-specific identifiers (CRN, instance names) have been replaced with placeholders (`<YOUR_CRN_INSTANCE>`, `<YOUR_INSTANCE_NAME>`).
+
+If you run into issues reproducing a specific result, feel free to open an issue on this repository.
 
 ---
 
