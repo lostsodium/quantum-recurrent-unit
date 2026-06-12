@@ -51,11 +51,11 @@ quantum-recurrent-unit/
 │       └── S4_3_feature_ordering/               # WDBC feature permutation (Table S3)
 └── data/
     ├── README.md                                # dataset sources & provenance
-    ├── mnist_pixels_3-5_8x8.pkl                  # processed MNIST "3 vs 5" data (8x8)
-    ├── MNIST_3_5_dataset.py                      # MNIST dataset loader
-    ├── WDBC_dataset.py                           # WDBC dataset loader
+    ├── mnist_pixels_3-5_8x8.pkl                 # processed MNIST "3 vs 5" data (8x8)
+    ├── MNIST_3_5_dataset.py                     # MNIST dataset loader
+    ├── WDBC_dataset.py                          # WDBC dataset loader
     └── provenance/
-        └── generate_mnist.ipynb                  # original generation script (Apache 2.0)
+        └── generate_mnist.ipynb                 # original generation script (Apache 2.0)
 ```
 
 ---
