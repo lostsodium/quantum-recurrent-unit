@@ -1,0 +1,6 @@
+method,group_id,obs_name,target_val,rep_id,sv_val,measured_val
+qesem,0,Z0,0.8,0,0.8,0.82
+qesem,0,Z4,0.8,0,0.8,0.8172
+qesem,0,Z6,0.8,0,0.8,0.793
+qesem,0,X5,0.8,0,0.8,0.8074
+qesem,0,X7,0.8,0,0.8,0.774
