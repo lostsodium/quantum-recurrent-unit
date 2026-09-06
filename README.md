@@ -48,7 +48,8 @@ quantum-recurrent-unit/
 │       │       ├── standard_qru/                # (a) full QRU with C-SWAP
 │       │       ├── without_c-swap/              # (b) C-SWAP + ancilla removed
 │       │       └── cnot_replacement/            # (c) C-SWAP -> CNOT
-│       └── S4_3_feature_ordering/               # WDBC feature permutation (Table S3)
+│       ├── S4_3_feature_ordering/                # WDBC feature permutation (Table S3)
+│       └── S7_QLSTMQGRU_Comparison/              # QLSTM/QGRU comparison (Table S7)
 └── data/
     ├── README.md                                # dataset sources & provenance
     ├── mnist_pixels_3-5_8x8.pkl                 # processed MNIST "3 vs 5" data (8x8)
