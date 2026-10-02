@@ -1,3 +1,0 @@
-hidden_dim,n_qubits,n_layers,n_params,test_acc,seconds,checkpoint_name,circuit_png
-8,4,3,144,0.952653486,1191.6,QGRU_MNIST_h8_q4_l3,circuits/QGRU_q4_l3.png
-8,4,4,156,0.924557752,2181.4,QGRU_MNIST_h8_q4_l4,circuits/QGRU_q4_l4.png
