@@ -1,0 +1,3 @@
+hidden_dim,n_layers_gate,n_layers_readout,gate_qubits,n_params,test_acc,seconds,checkpoint_name,circuit_png
+2,1,2,10,144,0.53069719,17380.6,QLSTM_chen_MNIST_h2_lg1_lr2,circuits/QLSTM_chen_h2_lg1.png
+2,5,2,10,624,0.693548387,70908.7,QLSTM_chen_MNIST_h2_lg5_lr2,circuits/QLSTM_chen_h2_lg5.png
