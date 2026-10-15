@@ -1,0 +1,111 @@
+{
+  "label": "20261010_021000",
+  "backend": "ibm_phoenix",
+  "transpiled_utc": "2026-10-09T18:10:00+00:00",
+  "rule": "optimization_level=1, CZ couplers with reported error > 0.01 excluded, seeds from 0 upward, identical circuits skipped",
+  "n_directed_couplers_excluded": 46,
+  "seeds_skipped_identical": [],
+  "group_id": 0,
+  "rep_id": 0,
+  "observables": [
+    "Z0",
+    "Z4",
+    "Z6",
+    "X5",
+    "X7"
+  ],
+  "circuits": [
+    {
+      "seed": 0,
+      "circuit_file": "pec_isa_circuit_ibm_phoenix_seed0_excl1pct_20261010_021000.qpy",
+      "sv_check": 2.6645352591003757e-15,
+      "depth": 266,
+      "depth_2q": 72,
+      "n_cz": 84,
+      "sum_cz_error": 0.12044709533210077,
+      "max_cz_error": 0.0019451567055106533,
+      "physical_qubits": [
+        93,
+        83,
+        84,
+        94,
+        104,
+        114,
+        113,
+        103,
+        115,
+        102
+      ],
+      "active_qubits": 10
+    },
+    {
+      "seed": 1,
+      "circuit_file": "pec_isa_circuit_ibm_phoenix_seed1_excl1pct_20261010_021000.qpy",
+      "sv_check": 3.3306690738754696e-15,
+      "depth": 290,
+      "depth_2q": 82,
+      "n_cz": 99,
+      "sum_cz_error": 0.13013570010557907,
+      "max_cz_error": 0.0019451567055106533,
+      "physical_qubits": [
+        102,
+        101,
+        91,
+        92,
+        94,
+        83,
+        93,
+        103,
+        84,
+        104
+      ],
+      "active_qubits": 10
+    },
+    {
+      "seed": 2,
+      "circuit_file": "pec_isa_circuit_ibm_phoenix_seed2_excl1pct_20261010_021000.qpy",
+      "sv_check": 3.1086244689504383e-15,
+      "depth": 284,
+      "depth_2q": 74,
+      "n_cz": 93,
+      "sum_cz_error": 0.1314570139530622,
+      "max_cz_error": 0.0017318622585467958,
+      "physical_qubits": [
+        92,
+        93,
+        94,
+        104,
+        114,
+        113,
+        112,
+        102,
+        115,
+        103
+      ],
+      "active_qubits": 10
+    },
+    {
+      "seed": 3,
+      "circuit_file": "pec_isa_circuit_ibm_phoenix_seed3_excl1pct_20261010_021000.qpy",
+      "sv_check": 3.1086244689504383e-15,
+      "depth": 301,
+      "depth_2q": 85,
+      "n_cz": 105,
+      "sum_cz_error": 0.1622827955785155,
+      "max_cz_error": 0.00258011761574381,
+      "physical_qubits": [
+        114,
+        115,
+        105,
+        104,
+        103,
+        102,
+        112,
+        113,
+        101,
+        93
+      ],
+      "active_qubits": 10
+    }
+  ]
+}
