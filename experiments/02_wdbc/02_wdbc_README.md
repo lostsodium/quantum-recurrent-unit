@@ -61,9 +61,3 @@ combines the three runs reported in the paper, with the columns:
 model, seed, trainable parameters, LOOCV accuracy, TP, TN, FP, FN, run time (min).
 Malignant samples are the positive class (TP = correctly classified malignant).
 Sensitivity, specificity, precision, and F1 in Table 5 follow from TP, TN, FP, FN.
-
-## Per-fold training checkpoints
-
-The intermediate training checkpoints (.pkl) of the 569 QRU folds are not stored
-in this repository. They are archived as `Checkpoint_QRU.zip` in Release v1.0.0:
-https://github.com/lostsodium/quantum-recurrent-unit/releases/tag/v1.0.0
