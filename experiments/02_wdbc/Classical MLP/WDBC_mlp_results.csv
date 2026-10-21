@@ -1,0 +1,4 @@
+model,seed,n_params,loocv_accuracy,TP,TN,FP,FN,run_time_min
+mlp_2,0,65,0.968366,202,349,8,10,324.2
+mlp_14,0,449,0.973638,204,350,7,8,324.6
+mlp_weka16,0,530,0.970123,204,348,9,8,294.5
